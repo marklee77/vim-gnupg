@@ -422,7 +422,7 @@ function s:GPGDecrypt(bufread)
     echom "g:GPGDefaultRecipients is not a Vim list, please correct this in your vimrc!"
     echohl None
   endif
-  let b:GPGOptions = []
+  "let b:GPGOptions = []
 
   " File doesn't exist yet, so nothing to decrypt
   if !filereadable(filename)
